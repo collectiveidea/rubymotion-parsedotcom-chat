@@ -29,6 +29,13 @@ class ChatViewController < UIViewController
   end
 
   def viewDidAppear(animated)
+    if !PFUser.currentUser
+      @login = PFLogInViewController.alloc.init
+      @login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton
+      @login.delegate = self
+      @login.signUpController.delegate = self
+      self.presentModalViewController(@login, animated:true)
+    end
   end
 
   def textFieldShouldReturn(textField)
