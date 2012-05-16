@@ -13,10 +13,17 @@ class ChatViewController < UIViewController
     view.addSubview message_box
 
     @tableView = UITableView.alloc.init
-    @tableView.frame = [[5,65],[310,400]]
+    @tableView.frame = [[5,65],[310,360]]
     @tableView.dataSource = @tableView.delegate = self
 
     view.addSubview @tableView
+
+    @logout = UIButton.buttonWithType(UIButtonTypeRoundedRect)
+    @logout.frame = [[5,430],[310,40]]
+    @logout.setTitle("Log Out", forState: UIControlStateNormal)
+    @logout.addTarget(self, action:"logout", forControlEvents: UIControlEventTouchUpInside)
+
+    view.addSubview @logout
 
     @messages = []
   end
@@ -39,5 +46,9 @@ class ChatViewController < UIViewController
     cell = tableView.dequeueReusableCellWithIdentifier("cell") || UITableViewCell.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier:"cell")
     cell.textLabel.text = @messages[indexPath.row]
     cell
+  end
+
+  def logout
+
   end
 end
