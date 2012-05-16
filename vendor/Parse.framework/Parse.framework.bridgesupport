@@ -1,0 +1,2644 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant type='i' declared_type='NSInteger' const='true' name='PARSE_API_VERSION'/>
+<constant type='@' declared_type='NSString*' const='true' name='PFLogInCancelNotification'/>
+<constant type='@' declared_type='NSString*' const='true' name='PFLogInFailureNotification'/>
+<constant type='@' declared_type='NSString*' const='true' name='PFLogInSuccessNotification'/>
+<constant type='@' declared_type='NSString*' const='true' name='PFSignUpCancelNotification'/>
+<constant type='@' declared_type='NSString*' const='true' name='PFSignUpFailureNotification'/>
+<constant type='@' declared_type='NSString*' const='true' name='PFSignUpSuccessNotification'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorAccountAlreadyLinked'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorCacheMiss'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorCommandUnavailable'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorConnectionFailed'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorFacebookAccountAlreadyLinked'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorFacebookIdMissing'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorFacebookInvalidSession'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorIncorrectType'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInternalServer'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidACL'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidChannelName'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidClassName'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidDeviceToken'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidEmailAddress'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidFileName'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidJSON'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidKeyName'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidLinkedSession'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidNestedKey'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidPointer'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorInvalidQuery'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorLinkedIdMissing'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorMissingObjectId'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorObjectNotFound'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorObjectTooLarge'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorOperationForbidden'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorPushMisconfigured'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorTimeout'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUserCanOnlyBeCreatedThroughSignUp'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUserCannotBeAlteredWithoutSession'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUserEmailMissing'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUserEmailTaken'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUserIdMismatch'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUserPasswordMissing'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUserWithEmailNotFound'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUsernameMissing'/>
+<constant type='i' declared_type='NSInteger' const='true' name='kPFErrorUsernameTaken'/>
+<constant type='@' declared_type='NSString*' const='true' name='kPFParseServer'/>
+<string_constant value='1.0.32' name='PARSE_VERSION' nsstring='true'/>
+<enum value='103' name='PFLogInFieldsDefault'/>
+<enum value='64' name='PFLogInFieldsDismissButton'/>
+<enum value='8' name='PFLogInFieldsFacebook'/>
+<enum value='4' name='PFLogInFieldsLogInButton'/>
+<enum value='0' name='PFLogInFieldsNone'/>
+<enum value='2' name='PFLogInFieldsPasswordForgotten'/>
+<enum value='32' name='PFLogInFieldsSignUpButton'/>
+<enum value='16' name='PFLogInFieldsTwitter'/>
+<enum value='1' name='PFLogInFieldsUsernameAndPassword'/>
+<enum value='2' name='PFSignUpFieldsAdditional'/>
+<enum value='13' name='PFSignUpFieldsDefault'/>
+<enum value='8' name='PFSignUpFieldsDismissButton'/>
+<enum value='1' name='PFSignUpFieldsEmail'/>
+<enum value='4' name='PFSignUpFieldsSignUpButton'/>
+<enum value='0' name='PFSignUpFieldsUsernameAndPassword'/>
+<enum value='2' name='PF_EGOOPullRefreshLoading'/>
+<enum value='1' name='PF_EGOOPullRefreshNormal'/>
+<enum value='0' name='PF_EGOOPullRefreshPulling'/>
+<enum value='0' name='PF_MBProgressHUDAnimationFade'/>
+<enum value='1' name='PF_MBProgressHUDAnimationZoom'/>
+<enum value='2' name='PF_MBProgressHUDModeCustomView'/>
+<enum value='1' name='PF_MBProgressHUDModeDeterminate'/>
+<enum value='0' name='PF_MBProgressHUDModeIndeterminate'/>
+<enum value='2' name='PF_kFBRequestStateComplete'/>
+<enum value='3' name='PF_kFBRequestStateError'/>
+<enum value='1' name='PF_kFBRequestStateLoading'/>
+<enum value='0' name='PF_kFBRequestStateReady'/>
+<enum value='3' name='kPFCachePolicyCacheElseNetwork'/>
+<enum value='1' name='kPFCachePolicyCacheOnly'/>
+<enum value='5' name='kPFCachePolicyCacheThenNetwork'/>
+<enum value='0' name='kPFCachePolicyIgnoreCache'/>
+<enum value='4' name='kPFCachePolicyNetworkElseCache'/>
+<enum value='2' name='kPFCachePolicyNetworkOnly'/>
+<enum value='2' name='kPFFileAwaitingFetch'/>
+<enum value='4' name='kPFFileDataAvailable'/>
+<enum value='0' name='kPFFileDirty'/>
+<enum value='3' name='kPFFileFetching'/>
+<enum value='1' name='kPFFileSaving'/>
+<class name='NSObject'>
+<method selector='dialog:didFailWithError:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialog:shouldOpenURLInExternalBrowser:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<arg index='1' type='@' declared_type='NSURL*' name='url'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='dialogCompleteWithUrl:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialogDidComplete:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialogDidNotComplete:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialogDidNotCompleteWithUrl:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='egoRefreshTableHeaderDataSourceIsLoading:'>
+<arg index='0' type='@' declared_type='PF_EGORefreshTableHeaderView*' name='view'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='egoRefreshTableHeaderDataSourceLastUpdated:'>
+<arg index='0' type='@' declared_type='PF_EGORefreshTableHeaderView*' name='view'/>
+<retval type='@' declared_type='NSDate*'/>
+</method>
+<method selector='egoRefreshTableHeaderDidTriggerRefresh:'>
+<arg index='0' type='@' declared_type='PF_EGORefreshTableHeaderView*' name='view'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fbDialogLogin:expirationDate:'>
+<arg index='0' type='@' declared_type='NSString*' name='token'/>
+<arg index='1' type='@' declared_type='NSDate*' name='expirationDate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fbDialogNotLogin:'>
+<arg index='0' type='B' declared_type='BOOL' name='cancelled'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fbDidExtendToken:expiresAt:'>
+<arg index='0' type='@' declared_type='NSString*' name='accessToken'/>
+<arg index='1' type='@' declared_type='NSDate*' name='expiresAt'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fbDidLogin'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fbDidLogout'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fbDidNotLogin:'>
+<arg index='0' type='B' declared_type='BOOL' name='cancelled'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fbSessionInvalidated'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='hudWasHidden'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='hudWasHidden:'>
+<arg index='0' type='@' declared_type='PF_MBProgressHUD*' name='hud'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='logInViewController:didFailToLogInWithError:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='logInViewController:didLogInUser:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<arg index='1' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='logInViewController:shouldBeginLogInWithUsername:password:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<arg index='1' type='@' declared_type='NSString*' name='username'/>
+<arg index='2' type='@' declared_type='NSString*' name='password'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='logInViewControllerDidCancelLogIn:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='request:didFailWithError:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='request:didLoad:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='id' name='result'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='request:didLoadRawResponse:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='NSData*' name='data'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='request:didReceiveResponse:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='NSURLResponse*' name='response'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='requestLoading:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpViewController:didFailToSignUpWithError:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpViewController:didSignUpUser:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<arg index='1' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpViewController:shouldBeginSignUp:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='info'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='signUpViewControllerDidCancelSignUp:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFACL'>
+<method class_method='true' selector='ACL'>
+<retval type='@' declared_type='PFACL*'/>
+</method>
+<method class_method='true' selector='ACLWithUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='@' declared_type='PFACL*'/>
+</method>
+<method selector='getPublicReadAccess'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='getPublicWriteAccess'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='getReadAccessForUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='getReadAccessForUserId:'>
+<arg index='0' type='@' declared_type='NSString*' name='userId'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='getWriteAccessForUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='getWriteAccessForUserId:'>
+<arg index='0' type='@' declared_type='NSString*' name='userId'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='setDefaultACL:withAccessForCurrentUser:'>
+<arg index='0' type='@' declared_type='PFACL*' name='acl'/>
+<arg index='1' type='B' declared_type='BOOL' name='currentUserAccess'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPublicReadAccess:'>
+<arg index='0' type='B' declared_type='BOOL' name='allowed'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPublicWriteAccess:'>
+<arg index='0' type='B' declared_type='BOOL' name='allowed'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setReadAccess:forUser:'>
+<arg index='0' type='B' declared_type='BOOL' name='allowed'/>
+<arg index='1' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setReadAccess:forUserId:'>
+<arg index='0' type='B' declared_type='BOOL' name='allowed'/>
+<arg index='1' type='@' declared_type='NSString*' name='userId'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWriteAccess:forUser:'>
+<arg index='0' type='B' declared_type='BOOL' name='allowed'/>
+<arg index='1' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWriteAccess:forUserId:'>
+<arg index='0' type='B' declared_type='BOOL' name='allowed'/>
+<arg index='1' type='@' declared_type='NSString*' name='userId'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFAnonymousUtils'>
+<method class_method='true' selector='isLinkedWithUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='logInWithBlock:'>
+<arg index='0' type='@?' declared_type='PFUserResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFUser*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFFacebookUtils'>
+<method class_method='true' selector='extendAccessTokenForUser:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='extendAccessTokenForUser:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='extendAccessTokenIfNeededForUser:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='extendAccessTokenIfNeededForUser:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='facebook'>
+<retval type='@' declared_type='PF_Facebook*'/>
+</method>
+<method class_method='true' selector='facebookWithDelegate:'>
+<arg index='0' type='@' declared_type='NSObject*' name='delegate'/>
+<retval type='@' declared_type='PF_Facebook*'/>
+</method>
+<method class_method='true' selector='handleOpenURL:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='initializeWithApplicationId:'>
+<arg index='0' type='@' declared_type='NSString*' name='appId'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='isLinkedWithUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='linkUser:facebookId:accessToken:expirationDate:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='NSString*' name='facebookId'/>
+<arg index='2' type='@' declared_type='NSString*' name='accessToken'/>
+<arg index='3' type='@' declared_type='NSDate*' name='expirationDate'/>
+<arg index='4' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:facebookId:accessToken:expirationDate:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='NSString*' name='facebookId'/>
+<arg index='2' type='@' declared_type='NSString*' name='accessToken'/>
+<arg index='3' type='@' declared_type='NSDate*' name='expirationDate'/>
+<arg index='4' type='@' declared_type='id' name='target'/>
+<arg index='5' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:permissions:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='NSArray*' name='permissions'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:permissions:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='2' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:permissions:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='2' type='@' declared_type='id' name='target'/>
+<arg index='3' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithFacebookId:accessToken:expirationDate:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='facebookId'/>
+<arg index='1' type='@' declared_type='NSString*' name='accessToken'/>
+<arg index='2' type='@' declared_type='NSDate*' name='expirationDate'/>
+<arg index='3' type='@?' declared_type='PFUserResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFUser*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithFacebookId:accessToken:expirationDate:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='facebookId'/>
+<arg index='1' type='@' declared_type='NSString*' name='accessToken'/>
+<arg index='2' type='@' declared_type='NSDate*' name='expirationDate'/>
+<arg index='3' type='@' declared_type='id' name='target'/>
+<arg index='4' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithPermissions:block:'>
+<arg index='0' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='1' type='@?' declared_type='PFUserResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFUser*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithPermissions:target:selector:'>
+<arg index='0' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='shouldExtendAccessTokenForUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='unlinkUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='unlinkUser:error:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='unlinkUserInBackground:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unlinkUserInBackground:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unlinkUserInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFFile'>
+<method selector='cancel'>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fileWithData:'>
+<arg index='0' type='@' declared_type='NSData*' name='data'/>
+<retval type='@' declared_type='PFFile*'/>
+</method>
+<method class_method='true' selector='fileWithName:data:'>
+<arg index='0' type='@' declared_type='NSString*' name='name'/>
+<arg index='1' type='@' declared_type='NSData*' name='data'/>
+<retval type='@' declared_type='PFFile*'/>
+</method>
+<method selector='getData'>
+<retval type='@' declared_type='NSData*'/>
+</method>
+<method selector='getData:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='NSData*'/>
+</method>
+<method selector='getDataInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFDataResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='NSData*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getDataInBackgroundWithBlock:progressBlock:'>
+<arg index='0' type='@?' declared_type='PFDataResultBlock' name='resultBlock' function_pointer='true'>
+<arg type='@' declared_type='NSData*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<arg index='1' type='@?' declared_type='PFProgressBlock' name='progressBlock' function_pointer='true'>
+<arg type='i' declared_type='int'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getDataInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='isDataAvailable'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isDirty'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='name'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='save'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='save:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='saveInBackground'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='saveInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='saveInBackgroundWithBlock:progressBlock:'>
+<arg index='0' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<arg index='1' type='@?' declared_type='PFProgressBlock' name='progressBlock' function_pointer='true'>
+<arg type='i' declared_type='int'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='saveInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='url'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='PFGeoPoint'>
+<method selector='distanceInKilometersTo:'>
+<arg index='0' type='@' declared_type='PFGeoPoint*' name='point'/>
+<retval type='d' declared_type='double'/>
+</method>
+<method selector='distanceInMilesTo:'>
+<arg index='0' type='@' declared_type='PFGeoPoint*' name='point'/>
+<retval type='d' declared_type='double'/>
+</method>
+<method selector='distanceInRadiansTo:'>
+<arg index='0' type='@' declared_type='PFGeoPoint*' name='point'/>
+<retval type='d' declared_type='double'/>
+</method>
+<method class_method='true' selector='geoPoint'>
+<retval type='@' declared_type='PFGeoPoint*'/>
+</method>
+<method class_method='true' selector='geoPointWithLatitude:longitude:'>
+<arg index='0' type='d' declared_type='double' name='latitude'/>
+<arg index='1' type='d' declared_type='double' name='longitude'/>
+<retval type='@' declared_type='PFGeoPoint*'/>
+</method>
+<method selector='latitude'>
+<retval type='d' declared_type='double'/>
+</method>
+<method selector='longitude'>
+<retval type='d' declared_type='double'/>
+</method>
+<method selector='setLatitude:'>
+<arg index='0' type='d' declared_type='double' name='latitude'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLongitude:'>
+<arg index='0' type='d' declared_type='double' name='longitude'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFLogInView'>
+<method selector='dismissButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='facebookButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='fields'>
+<retval type='i' declared_type='PFLogInFields'/>
+</method>
+<method selector='initWithFields:'>
+<arg index='0' type='i' declared_type='PFLogInFields' name='fields'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='logInButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='logo'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='passwordField'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='passwordForgottenButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='setLogo:'>
+<arg index='0' type='^i' declared_type='int*' name='logo'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='twitterButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='usernameField'>
+<retval type='^i' declared_type='int*'/>
+</method>
+</class>
+<class name='PFLogInViewController'>
+<method selector='delegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='facebookPermissions'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='fields'>
+<retval type='i' declared_type='PFLogInFields'/>
+</method>
+<method selector='logInView'>
+<retval type='@' declared_type='PFLogInView*'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setFacebookPermissions:'>
+<arg index='0' type='@' declared_type='NSArray*' name='facebookPermissions'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setFields:'>
+<arg index='0' type='i' declared_type='PFLogInFields' name='fields'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSignUpController:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpController'>
+<retval type='@' declared_type='PFSignUpViewController*'/>
+</method>
+</class>
+<class name='PFObject'>
+<method selector='ACL'>
+<retval type='@' declared_type='PFACL*'/>
+</method>
+<method selector='allKeys'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='className'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='createdAt'>
+<retval type='@' declared_type='NSDate*'/>
+</method>
+<method selector='delete'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='delete:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='deleteEventually'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='deleteInBackground'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='deleteInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='deleteInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fetch'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fetch:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAll:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAll:error:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAllIfNeeded:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAllIfNeeded:error:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAllIfNeededInBackground:block:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='@?' declared_type='PFArrayResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='NSArray*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAllIfNeededInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAllInBackground:block:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='@?' declared_type='PFArrayResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='NSArray*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='fetchAllInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fetchIfNeeded'>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='fetchIfNeeded:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='fetchIfNeededInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFObjectResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFObject*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fetchIfNeededInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fetchInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFObjectResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFObject*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fetchInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='incrementKey:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='incrementKey:byAmount:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSNumber*' name='amount'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='initWithClassName:'>
+<arg index='0' type='@' declared_type='NSString*' name='newClassName'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isDataAvailable'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='objectForKey:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='objectId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='objectWithClassName:'>
+<arg index='0' type='@' declared_type='NSString*' name='className'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method class_method='true' selector='objectWithoutDataWithClassName:objectId:'>
+<arg index='0' type='@' declared_type='NSString*' name='className'/>
+<arg index='1' type='@' declared_type='NSString*' name='objectId'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='refresh'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='refresh:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='refreshInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFObjectResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFObject*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='refreshInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeObjectForKey:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='save'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='save:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='saveAll:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='saveAll:error:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='saveAllInBackground:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='saveAllInBackground:block:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='saveAllInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='NSArray*' name='objects'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='saveEventually'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='saveInBackground'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='saveInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='saveInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setACL:'>
+<arg index='0' type='@' declared_type='PFACL*' name='ACL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setObject:forKey:'>
+<arg index='0' type='@' declared_type='id' name='object'/>
+<arg index='1' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setObjectId:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectId'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='updatedAt'>
+<retval type='@' declared_type='NSDate*'/>
+</method>
+</class>
+<class name='PFPush'>
+<method selector='clearExpiration'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='expireAfterTimeInterval:'>
+<arg index='0' type='d' declared_type='NSTimeInterval' name='timeInterval'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='expireAtDate:'>
+<arg index='0' type='@' declared_type='NSDate*' name='date'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='getSubscribedChannels:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='NSSet*'/>
+</method>
+<method class_method='true' selector='getSubscribedChannelsInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFSetResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='NSSet*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='getSubscribedChannelsInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='handlePush:'>
+<arg index='0' type='@' declared_type='NSDictionary*' name='userInfo'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sendPush:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='sendPushDataToChannel:withData:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='data'/>
+<arg index='2' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='sendPushDataToChannelInBackground:withData:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='data'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='sendPushDataToChannelInBackground:withData:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='data'/>
+<arg index='2' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='sendPushDataToChannelInBackground:withData:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='data'/>
+<arg index='2' type='@' declared_type='id' name='target'/>
+<arg index='3' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sendPushInBackground'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sendPushInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sendPushInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='sendPushMessageToChannel:withMessage:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSString*' name='message'/>
+<arg index='2' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='sendPushMessageToChannelInBackground:withMessage:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSString*' name='message'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='sendPushMessageToChannelInBackground:withMessage:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSString*' name='message'/>
+<arg index='2' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='sendPushMessageToChannelInBackground:withMessage:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='NSString*' name='message'/>
+<arg index='2' type='@' declared_type='id' name='target'/>
+<arg index='3' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setChannel:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setChannels:'>
+<arg index='0' type='@' declared_type='NSArray*' name='channels'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setData:'>
+<arg index='0' type='@' declared_type='NSDictionary*' name='data'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMessage:'>
+<arg index='0' type='@' declared_type='NSString*' name='message'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPushToAndroid:'>
+<arg index='0' type='B' declared_type='BOOL' name='pushToAndroid'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPushToIOS:'>
+<arg index='0' type='B' declared_type='BOOL' name='pushToIOS'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='storeDeviceToken:'>
+<arg index='0' type='@' declared_type='id' name='deviceToken'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='subscribeToChannel:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='subscribeToChannelInBackground:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='subscribeToChannelInBackground:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='subscribeToChannelInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unsubscribeFromChannel:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='unsubscribeFromChannelInBackground:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unsubscribeFromChannelInBackground:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unsubscribeFromChannelInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='channel'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFQuery'>
+<method selector='addAscendingOrder:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='addDescendingOrder:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='cachePolicy'>
+<retval type='i' declared_type='PFCachePolicy'/>
+</method>
+<method selector='cancel'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='className'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='clearAllCachedResults'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='clearCachedResult'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='countObjects'>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='countObjects:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='countObjectsInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFIntegerResultBlock' name='block' function_pointer='true'>
+<arg type='i' declared_type='int'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='countObjectsInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='findObjects'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='findObjects:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='findObjectsInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFArrayResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='NSArray*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='findObjectsInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getFirstObject'>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='getFirstObject:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='getFirstObjectInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFObjectResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFObject*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getFirstObjectInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getObjectInBackgroundWithId:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectId'/>
+<arg index='1' type='@?' declared_type='PFObjectResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFObject*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getObjectInBackgroundWithId:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectId'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='getObjectOfClass:objectId:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectClass'/>
+<arg index='1' type='@' declared_type='NSString*' name='objectId'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method class_method='true' selector='getObjectOfClass:objectId:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectClass'/>
+<arg index='1' type='@' declared_type='NSString*' name='objectId'/>
+<arg index='2' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='getObjectWithId:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectId'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='getObjectWithId:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectId'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method class_method='true' selector='getUserObjectWithId:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectId'/>
+<retval type='@' declared_type='PFUser*'/>
+</method>
+<method class_method='true' selector='getUserObjectWithId:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='objectId'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='PFUser*'/>
+</method>
+<method selector='hasCachedResult'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='includeKey:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='initWithClassName:'>
+<arg index='0' type='@' declared_type='NSString*' name='newClassName'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='limit'>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='maxCacheAge'>
+<retval type='d' declared_type='NSTimeInterval'/>
+</method>
+<method class_method='true' selector='orQueryWithSubqueries:'>
+<arg index='0' type='@' declared_type='NSArray*' name='queries'/>
+<retval type='@' declared_type='PFQuery*'/>
+</method>
+<method selector='orderByAscending:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='orderByDescending:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='queryForUser'>
+<retval type='@' declared_type='PFQuery*'/>
+</method>
+<method class_method='true' selector='queryWithClassName:'>
+<arg index='0' type='@' declared_type='NSString*' name='className'/>
+<retval type='@' declared_type='PFQuery*'/>
+</method>
+<method selector='setCachePolicy:'>
+<arg index='0' type='i' declared_type='PFCachePolicy' name='cachePolicy'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setClassName:'>
+<arg index='0' type='@' declared_type='NSString*' name='className'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLimit:'>
+<arg index='0' type='i' declared_type='NSInteger' name='limit'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMaxCacheAge:'>
+<arg index='0' type='d' declared_type='NSTimeInterval' name='maxCacheAge'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSkip:'>
+<arg index='0' type='i' declared_type='NSInteger' name='skip'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTrace:'>
+<arg index='0' type='B' declared_type='BOOL' name='trace'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='skip'>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='trace'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='whereKey:containedIn:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSArray*' name='array'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:containsString:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSString*' name='substring'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:doesNotMatchQuery:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='PFQuery*' name='query'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:equalTo:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='id' name='object'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:greaterThan:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='id' name='object'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:greaterThanOrEqualTo:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='id' name='object'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:hasPrefix:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSString*' name='prefix'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:hasSuffix:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSString*' name='suffix'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:lessThan:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='id' name='object'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:lessThanOrEqualTo:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='id' name='object'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:matchesQuery:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='PFQuery*' name='query'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:matchesRegex:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSString*' name='regex'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:matchesRegex:modifiers:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSString*' name='regex'/>
+<arg index='2' type='@' declared_type='NSString*' name='modifiers'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:nearGeoPoint:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='PFGeoPoint*' name='geopoint'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:nearGeoPoint:withinKilometers:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='PFGeoPoint*' name='geopoint'/>
+<arg index='2' type='d' declared_type='double' name='maxDistance'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:nearGeoPoint:withinMiles:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='PFGeoPoint*' name='geopoint'/>
+<arg index='2' type='d' declared_type='double' name='maxDistance'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:nearGeoPoint:withinRadians:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='PFGeoPoint*' name='geopoint'/>
+<arg index='2' type='d' declared_type='double' name='maxDistance'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:notContainedIn:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='NSArray*' name='array'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:notEqualTo:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='id' name='object'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKey:withinGeoBoxFromSouthwest:toNortheast:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<arg index='1' type='@' declared_type='PFGeoPoint*' name='southwest'/>
+<arg index='2' type='@' declared_type='PFGeoPoint*' name='northeast'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKeyDoesNotExist:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whereKeyExists:'>
+<arg index='0' type='@' declared_type='NSString*' name='key'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFQueryTableViewController'>
+<method selector='className'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='clear'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='initWithClassName:'>
+<arg index='0' type='@' declared_type='NSString*' name='aClassName'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='initWithStyle:className:'>
+<arg index='0' type='@' declared_type='id' name='style'/>
+<arg index='1' type='@' declared_type='NSString*' name='aClassName'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isLoading'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='keyToDisplay'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='loadNextPage'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='loadObjects'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='loadObjects:clear:'>
+<arg index='0' type='i' declared_type='NSInteger' name='page'/>
+<arg index='1' type='B' declared_type='BOOL' name='clear'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='objectAtIndex:'>
+<arg index='0' type='@' declared_type='NSIndexPath*' name='indexPath'/>
+<retval type='@' declared_type='PFObject*'/>
+</method>
+<method selector='objects'>
+<retval type='@' declared_type='NSMutableArray*'/>
+</method>
+<method selector='objectsDidLoad:'>
+<arg index='0' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='objectsPerPage'>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method selector='objectsWillLoad'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='pageThatIsLoading'>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='paginationEnabled'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='pullToRefreshEnabled'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='queryForTable'>
+<retval type='@' declared_type='PFQuery*'/>
+</method>
+<method selector='setClassName:'>
+<arg index='0' type='@' declared_type='NSString*' name='className'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setIsLoading:'>
+<arg index='0' type='B' declared_type='BOOL' name='isLoading'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setKeyToDisplay:'>
+<arg index='0' type='@' declared_type='NSString*' name='keyToDisplay'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setObjects:'>
+<arg index='0' type='@' declared_type='NSMutableArray*' name='objects'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setObjectsPerPage:'>
+<arg index='0' type='I' declared_type='NSUInteger' name='objectsPerPage'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPageThatIsLoading:'>
+<arg index='0' type='i' declared_type='NSInteger' name='pageThatIsLoading'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPaginationEnabled:'>
+<arg index='0' type='B' declared_type='BOOL' name='paginationEnabled'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPullToRefreshEnabled:'>
+<arg index='0' type='B' declared_type='BOOL' name='pullToRefreshEnabled'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='tableView:cellForNextPageAtIndexPath:'>
+<arg index='0' type='@' declared_type='id' name='tableView'/>
+<arg index='1' type='@' declared_type='NSIndexPath*' name='indexPath'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='tableView:cellForRowAtIndexPath:object:'>
+<arg index='0' type='@' declared_type='id' name='tableView'/>
+<arg index='1' type='@' declared_type='NSIndexPath*' name='indexPath'/>
+<arg index='2' type='@' declared_type='PFObject*' name='object'/>
+<retval type='@' declared_type='id'/>
+</method>
+</class>
+<class name='PFSignUpView'>
+<method selector='additionalField'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='dismissButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='emailField'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='fields'>
+<retval type='i' declared_type='PFSignUpFields'/>
+</method>
+<method selector='initWithFields:'>
+<arg index='0' type='i' declared_type='PFSignUpFields' name='fields'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='logo'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='passwordField'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='setLogo:'>
+<arg index='0' type='^i' declared_type='int*' name='logo'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpButton'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='usernameField'>
+<retval type='^i' declared_type='int*'/>
+</method>
+</class>
+<class name='PFSignUpViewController'>
+<method selector='delegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='fields'>
+<retval type='i' declared_type='PFSignUpFields'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setFields:'>
+<arg index='0' type='i' declared_type='PFSignUpFields' name='fields'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpView'>
+<retval type='@' declared_type='PFSignUpView*'/>
+</method>
+</class>
+<class name='PFTwitterUtils'>
+<method class_method='true' selector='initializeWithConsumerKey:consumerSecret:'>
+<arg index='0' type='@' declared_type='NSString*' name='consumerKey'/>
+<arg index='1' type='@' declared_type='NSString*' name='consumerSecret'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='isLinkedWithUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='linkUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:twitterId:screenName:authToken:authTokenSecret:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='NSString*' name='twitterId'/>
+<arg index='2' type='@' declared_type='NSString*' name='screenName'/>
+<arg index='3' type='@' declared_type='NSString*' name='authToken'/>
+<arg index='4' type='@' declared_type='NSString*' name='authTokenSecret'/>
+<arg index='5' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='NSString*' name='twitterId'/>
+<arg index='2' type='@' declared_type='NSString*' name='screenName'/>
+<arg index='3' type='@' declared_type='NSString*' name='authToken'/>
+<arg index='4' type='@' declared_type='NSString*' name='authTokenSecret'/>
+<arg index='5' type='@' declared_type='id' name='target'/>
+<arg index='6' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithBlock:'>
+<arg index='0' type='@?' declared_type='PFUserResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFUser*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithTwitterId:screenName:authToken:authTokenSecret:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='twitterId'/>
+<arg index='1' type='@' declared_type='NSString*' name='screenName'/>
+<arg index='2' type='@' declared_type='NSString*' name='authToken'/>
+<arg index='3' type='@' declared_type='NSString*' name='authTokenSecret'/>
+<arg index='4' type='@?' declared_type='PFUserResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFUser*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='twitterId'/>
+<arg index='1' type='@' declared_type='NSString*' name='screenName'/>
+<arg index='2' type='@' declared_type='NSString*' name='authToken'/>
+<arg index='3' type='@' declared_type='NSString*' name='authTokenSecret'/>
+<arg index='4' type='@' declared_type='id' name='target'/>
+<arg index='5' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='twitter'>
+<retval type='@' declared_type='PF_Twitter*'/>
+</method>
+<method class_method='true' selector='unlinkUser:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='unlinkUser:error:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='unlinkUserInBackground:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unlinkUserInBackground:block:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unlinkUserInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='PFUser*' name='user'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PFUser'>
+<method class_method='true' selector='currentUser'>
+<retval type='@' declared_type='PFUser*'/>
+</method>
+<method selector='email'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='enableAutomaticUser'>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='facebook'>
+<retval type='@' declared_type='PF_Facebook*'/>
+</method>
+<method selector='facebookAccessToken'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='facebookExpirationDate'>
+<retval type='@' declared_type='NSDate*'/>
+</method>
+<method selector='facebookId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='facebookWithDelegate:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='PF_Facebook*'/>
+</method>
+<method selector='hasFacebook'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isAuthenticated'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isNew'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='linkToFacebook:block:'>
+<arg index='0' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='linkToFacebook:target:selector:'>
+<arg index='0' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithFacebook:block:'>
+<arg index='0' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='1' type='@?' declared_type='PFUserResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFUser*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithFacebook:target:selector:'>
+<arg index='0' type='@' declared_type='NSArray*' name='permissions'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithUsername:password:'>
+<arg index='0' type='@' declared_type='NSString*' name='username'/>
+<arg index='1' type='@' declared_type='NSString*' name='password'/>
+<retval type='@' declared_type='PFUser*'/>
+</method>
+<method class_method='true' selector='logInWithUsername:password:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='username'/>
+<arg index='1' type='@' declared_type='NSString*' name='password'/>
+<arg index='2' type='^@' declared_type='NSError**' name='error'/>
+<retval type='@' declared_type='PFUser*'/>
+</method>
+<method class_method='true' selector='logInWithUsernameInBackground:password:'>
+<arg index='0' type='@' declared_type='NSString*' name='username'/>
+<arg index='1' type='@' declared_type='NSString*' name='password'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithUsernameInBackground:password:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='username'/>
+<arg index='1' type='@' declared_type='NSString*' name='password'/>
+<arg index='2' type='@?' declared_type='PFUserResultBlock' name='block' function_pointer='true'>
+<arg type='@' declared_type='PFUser*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logInWithUsernameInBackground:password:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='username'/>
+<arg index='1' type='@' declared_type='NSString*' name='password'/>
+<arg index='2' type='@' declared_type='id' name='target'/>
+<arg index='3' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='logOut'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='password'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='requestPasswordResetForEmail:'>
+<arg index='0' type='@' declared_type='NSString*' name='email'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='requestPasswordResetForEmail:error:'>
+<arg index='0' type='@' declared_type='NSString*' name='email'/>
+<arg index='1' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='requestPasswordResetForEmailInBackground:'>
+<arg index='0' type='@' declared_type='NSString*' name='email'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='requestPasswordResetForEmailInBackground:block:'>
+<arg index='0' type='@' declared_type='NSString*' name='email'/>
+<arg index='1' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='requestPasswordResetForEmailInBackground:target:selector:'>
+<arg index='0' type='@' declared_type='NSString*' name='email'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sessionToken'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setEmail:'>
+<arg index='0' type='@' declared_type='NSString*' name='email'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPassword:'>
+<arg index='0' type='@' declared_type='NSString*' name='password'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSessionToken:'>
+<arg index='0' type='@' declared_type='NSString*' name='sessionToken'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setUsername:'>
+<arg index='0' type='@' declared_type='NSString*' name='username'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUp'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='signUp:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='signUpInBackground'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpInBackgroundWithBlock:'>
+<arg index='0' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signUpInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='unlinkFromFacebook'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='unlinkFromFacebookInBackgroundWithTarget:selector:'>
+<arg index='0' type='@' declared_type='id' name='target'/>
+<arg index='1' type=':' declared_type='SEL' name='selector'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='unlinkFromFacebookWithBlock:'>
+<arg index='0' type='@?' declared_type='PFBooleanResultBlock' name='block' function_pointer='true'>
+<arg type='B' declared_type='BOOL'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='unlinkFromFacebookWithError:'>
+<arg index='0' type='^@' declared_type='NSError**' name='error'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='user'>
+<retval type='@' declared_type='PFUser*'/>
+</method>
+<method selector='username'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='PF_EGORefreshTableHeaderView'>
+<method selector='delegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='egoRefreshScrollViewDataSourceDidFinishedLoading:'>
+<arg index='0' type='@' declared_type='id' name='scrollView'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='egoRefreshScrollViewDidEndDragging:'>
+<arg index='0' type='@' declared_type='id' name='scrollView'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='egoRefreshScrollViewDidScroll:'>
+<arg index='0' type='@' declared_type='id' name='scrollView'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='refreshLastUpdatedDate'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PF_FBDialog'>
+<method selector='delegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='dialogDidCancel:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialogDidSucceed:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialogWillAppear'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialogWillDisappear'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dismissWithError:animated:'>
+<arg index='0' type='@' declared_type='NSError*' name='error'/>
+<arg index='1' type='B' declared_type='BOOL' name='animated'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dismissWithSuccess:animated:'>
+<arg index='0' type='B' declared_type='BOOL' name='success'/>
+<arg index='1' type='B' declared_type='BOOL' name='animated'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getStringFromUrl:needle:'>
+<arg index='0' type='@' declared_type='NSString*' name='url'/>
+<arg index='1' type='@' declared_type='NSString*' name='needle'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='initWithURL:params:isViewInvisible:frictionlessSettings:delegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='loadingURL'/>
+<arg index='1' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='2' type='B' declared_type='BOOL' name='isViewInvisible'/>
+<arg index='3' type='@' declared_type='PF_FBFrictionlessRequestSettings*' name='frictionlessSettings'/>
+<arg index='4' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='load'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='loadURL:get:'>
+<arg index='0' type='@' declared_type='NSString*' name='url'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='getParams'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='params'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setParams:'>
+<arg index='0' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='show'>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PF_FBFrictionlessRequestSettings'>
+<method selector='enableWithFacebook:'>
+<arg index='0' type='@' declared_type='PF_Facebook*' name='facebook'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='enabled'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='init'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isFrictionlessEnabledForRecipient:'>
+<arg index='0' type='@' declared_type='id' name='fbid'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isFrictionlessEnabledForRecipients:'>
+<arg index='0' type='@' declared_type='NSArray*' name='fbids'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='reloadRecipientCacheWithFacebook:'>
+<arg index='0' type='@' declared_type='PF_Facebook*' name='facebook'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='updateRecipientCacheWithRecipients:'>
+<arg index='0' type='@' declared_type='NSArray*' name='ids'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PF_FBLoginDialog'>
+<method selector='initWithURL:loginParams:delegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='loginURL'/>
+<arg index='1' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='2' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='id'/>
+</method>
+</class>
+<class name='PF_FBRequest'>
+<method selector='connect'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='connection'>
+<retval type='@' declared_type='NSURLConnection*'/>
+</method>
+<method selector='delegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='error'>
+<retval type='@' declared_type='NSError*'/>
+</method>
+<method class_method='true' selector='getRequestWithParams:httpMethod:delegate:requestURL:'>
+<arg index='0' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='1' type='@' declared_type='NSString*' name='httpMethod'/>
+<arg index='2' type='@' declared_type='id' name='delegate'/>
+<arg index='3' type='@' declared_type='NSString*' name='url'/>
+<retval type='@' declared_type='PF_FBRequest*'/>
+</method>
+<method selector='httpMethod'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='loading'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='params'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='responseText'>
+<retval type='@' declared_type='NSMutableData*'/>
+</method>
+<method class_method='true' selector='serializeURL:params:'>
+<arg index='0' type='@' declared_type='NSString*' name='baseUrl'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='params'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='serializeURL:params:httpMethod:'>
+<arg index='0' type='@' declared_type='NSString*' name='baseUrl'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='params'/>
+<arg index='2' type='@' declared_type='NSString*' name='httpMethod'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='sessionDidExpire'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setConnection:'>
+<arg index='0' type='@' declared_type='NSURLConnection*' name='connection'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setError:'>
+<arg index='0' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setHttpMethod:'>
+<arg index='0' type='@' declared_type='NSString*' name='httpMethod'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setParams:'>
+<arg index='0' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setResponseText:'>
+<arg index='0' type='@' declared_type='NSMutableData*' name='responseText'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setUrl:'>
+<arg index='0' type='@' declared_type='NSString*' name='url'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='state'>
+<retval type='I' declared_type='PF_FBRequestState'/>
+</method>
+<method selector='url'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='PF_Facebook'>
+<method selector='accessToken'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='authorize:'>
+<arg index='0' type='@' declared_type='NSArray*' name='permissions'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialog:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='action'/>
+<arg index='1' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dialog:andParams:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='action'/>
+<arg index='1' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='2' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='enableFrictionlessRequests'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='expirationDate'>
+<retval type='@' declared_type='NSDate*'/>
+</method>
+<method selector='extendAccessToken'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='extendAccessTokenIfNeeded'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='handleOpenURL:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='initWithAppId:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='appId'/>
+<arg index='1' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='initWithAppId:urlSchemeSuffix:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='appId'/>
+<arg index='1' type='@' declared_type='NSString*' name='urlSchemeSuffix'/>
+<arg index='2' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isFrictionlessEnabledForRecipient:'>
+<arg index='0' type='@' declared_type='id' name='fbid'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isFrictionlessEnabledForRecipients:'>
+<arg index='0' type='@' declared_type='NSArray*' name='fbids'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isFrictionlessRequestsEnabled'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isSessionValid'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='logout'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='logout:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='reloadFrictionlessRecipientCache'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='requestWithGraphPath:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='graphPath'/>
+<arg index='1' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='PF_FBRequest*'/>
+</method>
+<method selector='requestWithGraphPath:andParams:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='graphPath'/>
+<arg index='1' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='2' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='PF_FBRequest*'/>
+</method>
+<method selector='requestWithGraphPath:andParams:andHttpMethod:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='graphPath'/>
+<arg index='1' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='2' type='@' declared_type='NSString*' name='httpMethod'/>
+<arg index='3' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='PF_FBRequest*'/>
+</method>
+<method selector='requestWithMethodName:andParams:andHttpMethod:andDelegate:'>
+<arg index='0' type='@' declared_type='NSString*' name='methodName'/>
+<arg index='1' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='2' type='@' declared_type='NSString*' name='httpMethod'/>
+<arg index='3' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='PF_FBRequest*'/>
+</method>
+<method selector='requestWithParams:andDelegate:'>
+<arg index='0' type='@' declared_type='NSMutableDictionary*' name='params'/>
+<arg index='1' type='@' declared_type='id' name='delegate'/>
+<retval type='@' declared_type='PF_FBRequest*'/>
+</method>
+<method selector='sessionDelegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='setAccessToken:'>
+<arg index='0' type='@' declared_type='NSString*' name='accessToken'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setExpirationDate:'>
+<arg index='0' type='@' declared_type='NSDate*' name='expirationDate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSessionDelegate:'>
+<arg index='0' type='@' declared_type='id' name='sessionDelegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setUrlSchemeSuffix:'>
+<arg index='0' type='@' declared_type='NSString*' name='urlSchemeSuffix'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='shouldExtendAccessToken'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='urlSchemeSuffix'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='PF_MBProgressHUD'>
+<method selector='animationType'>
+<retval type='i' declared_type='PF_MBProgressHUDAnimation'/>
+</method>
+<method selector='customView'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='delegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='detailsLabelFont'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='detailsLabelText'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='dimBackground'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='graceTime'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='hide:'>
+<arg index='0' type='B' declared_type='BOOL' name='animated'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='hide:afterDelay:'>
+<arg index='0' type='B' declared_type='BOOL' name='animated'/>
+<arg index='1' type='d' declared_type='NSTimeInterval' name='delay'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='hideHUDForView:animated:'>
+<arg index='0' type='@' declared_type='id' name='view'/>
+<arg index='1' type='B' declared_type='BOOL' name='animated'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='initWithView:'>
+<arg index='0' type='@' declared_type='id' name='view'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='initWithWindow:'>
+<arg index='0' type='@' declared_type='id' name='window'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='labelFont'>
+<retval type='^i' declared_type='int*'/>
+</method>
+<method selector='labelText'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='margin'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='minShowTime'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='mode'>
+<retval type='i' declared_type='PF_MBProgressHUDMode'/>
+</method>
+<method selector='opacity'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='progress'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='removeFromSuperViewOnHide'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setAnimationType:'>
+<arg index='0' type='i' declared_type='PF_MBProgressHUDAnimation' name='animationType'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCustomView:'>
+<arg index='0' type='^i' declared_type='int*' name='customView'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' type='@' declared_type='id' name='delegate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDetailsLabelFont:'>
+<arg index='0' type='^i' declared_type='int*' name='detailsLabelFont'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDetailsLabelText:'>
+<arg index='0' type='@' declared_type='NSString*' name='detailsLabelText'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDimBackground:'>
+<arg index='0' type='B' declared_type='BOOL' name='dimBackground'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setGraceTime:'>
+<arg index='0' type='f' declared_type='float' name='graceTime'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLabelFont:'>
+<arg index='0' type='^i' declared_type='int*' name='labelFont'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLabelText:'>
+<arg index='0' type='@' declared_type='NSString*' name='labelText'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMargin:'>
+<arg index='0' type='f' declared_type='float' name='margin'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMinShowTime:'>
+<arg index='0' type='f' declared_type='float' name='minShowTime'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMode:'>
+<arg index='0' type='i' declared_type='PF_MBProgressHUDMode' name='mode'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setOpacity:'>
+<arg index='0' type='f' declared_type='float' name='opacity'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setProgress:'>
+<arg index='0' type='f' declared_type='float' name='progress'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setRemoveFromSuperViewOnHide:'>
+<arg index='0' type='B' declared_type='BOOL' name='removeFromSuperViewOnHide'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTaskInProgress:'>
+<arg index='0' type='B' declared_type='BOOL' name='taskInProgress'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setXOffset:'>
+<arg index='0' type='f' declared_type='float' name='xOffset'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setYOffset:'>
+<arg index='0' type='f' declared_type='float' name='yOffset'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='show:'>
+<arg index='0' type='B' declared_type='BOOL' name='animated'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='showHUDAddedTo:animated:'>
+<arg index='0' type='@' declared_type='id' name='view'/>
+<arg index='1' type='B' declared_type='BOOL' name='animated'/>
+<retval type='@' declared_type='PF_MBProgressHUD*'/>
+</method>
+<method selector='showWhileExecuting:onTarget:withObject:animated:'>
+<arg index='0' type=':' declared_type='SEL' name='method'/>
+<arg index='1' type='@' declared_type='id' name='target'/>
+<arg index='2' type='@' declared_type='id' name='object'/>
+<arg index='3' type='B' declared_type='BOOL' name='animated'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='taskInProgress'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='xOffset'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='yOffset'>
+<retval type='f' declared_type='float'/>
+</method>
+</class>
+<class name='PF_MBRoundProgressView'>
+<method selector='progress'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='setProgress:'>
+<arg index='0' type='f' declared_type='float' name='progress'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='PF_Twitter'>
+<method selector='authToken'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='authTokenSecret'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='authorizeWithSuccess:failure:cancel:'>
+<arg index='0' type='@?' declared_type='void (^)(void)' name='success' function_pointer='true'>
+<retval type='v' declared_type='void'/>
+</arg>
+<arg index='1' type='@?' declared_type='void (^)(NSError *)' name='failure' function_pointer='true'>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<arg index='2' type='@?' declared_type='void (^)(void)' name='cancel' function_pointer='true'>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='consumerKey'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='consumerSecret'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='screenName'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setAuthToken:'>
+<arg index='0' type='@' declared_type='NSString*' name='authToken'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setAuthTokenSecret:'>
+<arg index='0' type='@' declared_type='NSString*' name='authTokenSecret'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setConsumerKey:'>
+<arg index='0' type='@' declared_type='NSString*' name='consumerKey'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setConsumerSecret:'>
+<arg index='0' type='@' declared_type='NSString*' name='consumerSecret'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setScreenName:'>
+<arg index='0' type='@' declared_type='NSString*' name='screenName'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setUserId:'>
+<arg index='0' type='@' declared_type='NSString*' name='userId'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='signRequest:'>
+<arg index='0' type='@' declared_type='NSMutableURLRequest*' name='request'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='userId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='Parse'>
+<method class_method='true' selector='errorMessagesEnabled:'>
+<arg index='0' type='B' declared_type='BOOL' name='enabled'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='getApplicationId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='getClientKey'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='getFacebookApplicationId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='hasFacebookApplicationId'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='offlineMessagesEnabled:'>
+<arg index='0' type='B' declared_type='BOOL' name='enabled'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='setApplicationId:clientKey:'>
+<arg index='0' type='@' declared_type='NSString*' name='applicationId'/>
+<arg index='1' type='@' declared_type='NSString*' name='clientKey'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='setFacebookApplicationId:'>
+<arg index='0' type='@' declared_type='NSString*' name='applicationId'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<informal_protocol name='PFLogInViewControllerDelegate'>
+<method type='v16@0:4@8@12' selector='logInViewController:didFailToLogInWithError:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v16@0:4@8@12' selector='logInViewController:didLogInUser:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<arg index='1' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='B20@0:4@8@12@16' selector='logInViewController:shouldBeginLogInWithUsername:password:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<arg index='1' type='@' declared_type='NSString*' name='username'/>
+<arg index='2' type='@' declared_type='NSString*' name='password'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='v12@0:4@8' selector='logInViewControllerDidCancelLogIn:'>
+<arg index='0' type='@' declared_type='PFLogInViewController*' name='logInController'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='PFSignUpViewControllerDelegate'>
+<method type='v16@0:4@8@12' selector='signUpViewController:didFailToSignUpWithError:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v16@0:4@8@12' selector='signUpViewController:didSignUpUser:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<arg index='1' type='@' declared_type='PFUser*' name='user'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='B16@0:4@8@12' selector='signUpViewController:shouldBeginSignUp:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<arg index='1' type='@' declared_type='NSDictionary*' name='info'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='v12@0:4@8' selector='signUpViewControllerDidCancelSignUp:'>
+<arg index='0' type='@' declared_type='PFSignUpViewController*' name='signUpController'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='PF_EGORefreshTableHeaderDelegate'>
+<method type='B12@0:4@8' selector='egoRefreshTableHeaderDataSourceIsLoading:'>
+<arg index='0' type='@' declared_type='PF_EGORefreshTableHeaderView*' name='view'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='@12@0:4@8' selector='egoRefreshTableHeaderDataSourceLastUpdated:'>
+<arg index='0' type='@' declared_type='PF_EGORefreshTableHeaderView*' name='view'/>
+<retval type='@' declared_type='NSDate*'/>
+</method>
+<method type='v12@0:4@8' selector='egoRefreshTableHeaderDidTriggerRefresh:'>
+<arg index='0' type='@' declared_type='PF_EGORefreshTableHeaderView*' name='view'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='PF_FBDialogDelegate'>
+<method type='v16@0:4@8@12' selector='dialog:didFailWithError:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='B16@0:4@8@12' selector='dialog:shouldOpenURLInExternalBrowser:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<arg index='1' type='@' declared_type='NSURL*' name='url'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='v12@0:4@8' selector='dialogCompleteWithUrl:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v12@0:4@8' selector='dialogDidComplete:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v12@0:4@8' selector='dialogDidNotComplete:'>
+<arg index='0' type='@' declared_type='PF_FBDialog*' name='dialog'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v12@0:4@8' selector='dialogDidNotCompleteWithUrl:'>
+<arg index='0' type='@' declared_type='NSURL*' name='url'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='PF_FBLoginDialogDelegate'>
+<method type='v16@0:4@8@12' selector='fbDialogLogin:expirationDate:'>
+<arg index='0' type='@' declared_type='NSString*' name='token'/>
+<arg index='1' type='@' declared_type='NSDate*' name='expirationDate'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v12@0:4B8' selector='fbDialogNotLogin:'>
+<arg index='0' type='B' declared_type='BOOL' name='cancelled'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='PF_FBRequestDelegate'>
+<method type='v16@0:4@8@12' selector='request:didFailWithError:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='NSError*' name='error'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v16@0:4@8@12' selector='request:didLoad:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='id' name='result'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v16@0:4@8@12' selector='request:didLoadRawResponse:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='NSData*' name='data'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v16@0:4@8@12' selector='request:didReceiveResponse:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<arg index='1' type='@' declared_type='NSURLResponse*' name='response'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v12@0:4@8' selector='requestLoading:'>
+<arg index='0' type='@' declared_type='PF_FBRequest*' name='request'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='PF_FBSessionDelegate'>
+<method type='v16@0:4@8@12' selector='fbDidExtendToken:expiresAt:'>
+<arg index='0' type='@' declared_type='NSString*' name='accessToken'/>
+<arg index='1' type='@' declared_type='NSDate*' name='expiresAt'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v8@0:4' selector='fbDidLogin'>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v8@0:4' selector='fbDidLogout'>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v12@0:4B8' selector='fbDidNotLogin:'>
+<arg index='0' type='B' declared_type='BOOL' name='cancelled'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v8@0:4' selector='fbSessionInvalidated'>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='PF_MBProgressHUDDelegate'>
+<method type='v8@0:4' selector='hudWasHidden'>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v12@0:4@8' selector='hudWasHidden:'>
+<arg index='0' type='@' declared_type='PF_MBProgressHUD*' name='hud'/>
+<retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+</signatures>
