@@ -40,7 +40,7 @@ class ChatViewController < UIViewController
 
   def textFieldShouldReturn(textField)
     textField.resignFirstResponder
-    @messages.unshift textField.text
+    record_message textField.text
     textField.text = ""
     @tableView.reloadData
   end
@@ -56,6 +56,15 @@ class ChatViewController < UIViewController
   end
 
   def logout
+  end
 
+  def record_message(message)
+    PFPush.sendPushMessageToChannel("", withMessage:message)
+    display_message(message)
+  end
+
+  def display_message(message)
+    @messages.unshift message
+    @tableView.reloadData
   end
 end
