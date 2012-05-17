@@ -29,13 +29,7 @@ class ChatViewController < UIViewController
   end
 
   def viewDidAppear(animated)
-    if !PFUser.currentUser
-      @login = PFLogInViewController.alloc.init
-      @login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton
-      @login.delegate = self
-      @login.signUpController.delegate = self
-      self.presentModalViewController(@login, animated:true)
-    end
+    display_login unless PFUser.currentUser
   end
 
   def textFieldShouldReturn(textField)
@@ -55,7 +49,21 @@ class ChatViewController < UIViewController
     cell
   end
 
+  def logInViewController(logIn, didLogInUser:user)
+    @login.dismissModalViewControllerAnimated(true)
+  end
+
+  def display_login
+    @login = PFLogInViewController.alloc.init
+    @login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton
+    @login.delegate = self
+    @login.signUpController.delegate = self
+    self.presentModalViewController(@login, animated:true)
+  end
+
   def logout
+    PFUser.logOut
+    display_login
   end
 
   def record_message(message)
